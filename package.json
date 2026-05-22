@@ -1,0 +1,25 @@
+{
+  "name": "repo-software",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "pipeline:consortiums": "node pipeline/00-fetch-consortiums.mjs",
+    "pipeline:clients": "node pipeline/01-fetch-clients.mjs",
+    "pipeline:enrich": "node pipeline/02-enrich-software.mjs",
+    "pipeline:url-patterns": "node pipeline/02b-url-patterns.mjs",
+    "pipeline:text-host": "node pipeline/02c-text-and-host.mjs",
+    "pipeline:oai": "node pipeline/02d-oai-probe.mjs",
+    "pipeline:siblings": "node pipeline/02e-siblings.mjs",
+    "pipeline:manual": "node pipeline/02f-manual-whitelist.mjs",
+    "pipeline:re3-name": "node pipeline/02g-re3data-name-match.mjs",
+    "pipeline:doi-sample": "node pipeline/02h-doi-sample.mjs",
+    "pipeline:completeness": "node pipeline/05-completeness.mjs",
+    "pipeline:field-counts": "node pipeline/06-field-counts.mjs",
+    "pipeline:liveness": "node pipeline/03-liveness.mjs",
+    "pipeline:doi-counts": "node pipeline/03b-doi-counts.mjs",
+    "pipeline:aggregate": "node pipeline/04-aggregate.mjs",
+    "pipeline:all": "npm run pipeline:consortiums && npm run pipeline:clients && npm run pipeline:enrich && npm run pipeline:liveness && npm run pipeline:aggregate",
+    "pipeline:no-liveness": "npm run pipeline:consortiums && npm run pipeline:clients && npm run pipeline:enrich && npm run pipeline:aggregate"
+  }
+}

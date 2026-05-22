@@ -1,0 +1,14 @@
+node_modules/
+dist/
+.DS_Store
+*.log
+.claude/
+
+# Pipeline caches and raw data — only the aggregated JSONs committed
+data/clients.json
+data/clients.enriched.json
+data/consortiums.raw.json
+data/*-cache.json
+data/re3data-index.json
+data/re3data-name-index.json
+data/re3data-software.json

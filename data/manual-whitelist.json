@@ -1,0 +1,81 @@
+{
+  "_comment": "Manual labels for clients running known custom/institutional infrastructure. These are NOT detection failures — they are bespoke codebases (or hosted services that don't advertise themselves) that don't surface a platform signal. Promoting them out of 'unknown' makes the unidentified bucket more honest. Edit freely. Order: byClientId (exact match) > byClientPrefix > byHostname (exact) > byHostnameSuffix.",
+
+  "byClientId": {
+    "rpht.nifs":           { "platform": "Custom / institutional", "note": "NIFS (National Institute for Fusion Science, Japan)" },
+    "ylqb.ybhfwy":         { "platform": "Custom / institutional", "note": "DiSSCo (Distributed System of Scientific Collections, EU)" },
+    "gbif.gbif":           { "platform": "Custom / institutional", "note": "GBIF Registry (Java/PostgreSQL)" },
+    "gbif.col":            { "platform": "Custom / institutional", "note": "Catalogue of Life (GBIF-hosted)" },
+    "estdoi.bio":          { "platform": "Custom / institutional", "note": "PlutoF (University of Tartu)" },
+    "arxiv.content":       { "platform": "Custom / institutional", "note": "arXiv (Cornell — Perl/Python bespoke)" },
+    "fao.itpgrfa":         { "platform": "Custom / institutional", "note": "GLIS (FAO International Treaty on Plant Genetic Resources)" },
+    "rg.rg":               { "platform": "Custom / institutional", "note": "ResearchGate (commercial bespoke)" },
+
+    "ethz.seals":          { "platform": "Custom / institutional", "note": "E-Periodica / SEALS (ETH Zürich)" },
+    "ethz.epics-ba":       { "platform": "Custom / institutional", "note": "E-Pics Bildarchiv (ETH Zürich)" },
+    "ethz.epics-bs":       { "platform": "Custom / institutional", "note": "E-Pics 4 — Biosys (ETH Zürich)" },
+    "ethz.wsllfi":         { "platform": "Custom / institutional", "note": "WSL Landesforstinventar" },
+    "ethz.e-manus":        { "platform": "Custom / institutional", "note": "e-manuscripta (ETH Zürich)" },
+    "ethz.e-rara":         { "platform": "Custom / institutional", "note": "e-rara (ETH Zürich)" },
+    "ethz.gs":             { "platform": "Custom / institutional", "note": "Graphische Sammlung (ETH Zürich)" },
+
+    "pdsc.repo":           { "platform": "Custom / institutional", "note": "PARADISEC (Pacific & Regional Archive)" },
+    "qpcj.ebas":           { "platform": "Custom / institutional", "note": "EBAS (NILU atmospheric data)" },
+    "ubc.oc":              { "platform": "Custom / institutional", "note": "UBC Open Collections" },
+    "tind.ntnu":           { "platform": "TIND",                    "note": "TIND.io — Invenio-based hosted service" },
+    "tind.agecon":         { "platform": "TIND",                    "note": "AgEcon Search on TIND.io" },
+    "zbmed.dsmz":          { "platform": "Custom / institutional", "note": "DSMZ — BacDive (Python bespoke)" },
+    "cul.columbia":        { "platform": "Custom / institutional", "note": "Columbia University Libraries" },
+
+    "doe.pnnl":            { "platform": "Custom / institutional", "note": "DOE Pacific Northwest National Laboratory" },
+    "doe.lbnl":            { "platform": "Custom / institutional", "note": "DOE Lawrence Berkeley National Laboratory" },
+    "ala.repo":            { "platform": "Custom / institutional", "note": "Atlas of Living Australia (custom biodiversity infrastructure)" },
+    "ipk.gbis":            { "platform": "Custom / institutional", "note": "IPK Genebank Information System (Leibniz Gatersleben)" },
+    "iris.iris":           { "platform": "Custom / institutional", "note": "IRIS — NSF Seismological Facility" },
+    "edi.edi":             { "platform": "Custom / institutional", "note": "Environmental Data Initiative (PASTA framework)" },
+    "wisc.neotoma":        { "platform": "Custom / institutional", "note": "Neotoma Paleoecological Database (custom Postgres)" },
+    "dk.geus":             { "platform": "Custom / institutional", "note": "Geological Survey of Denmark and Greenland" },
+    "asu.tdar":            { "platform": "Custom / institutional", "note": "tDAR — Digital Archaeological Record (Arizona State)" },
+    "cul.r2r":             { "platform": "Custom / institutional", "note": "Rolling Deck to Repository (R2R)" },
+    "pitt.pqr":            { "platform": "Custom / institutional", "note": "Pitt Quantum Repository" },
+    "bl.imperial":         { "platform": "Custom / institutional", "note": "Imperial College Research Data Service" },
+    "iapx.bsycxq":         { "platform": "Custom / institutional", "note": "Greater South Information System (gresis.osc.int)" },
+
+    "usc.dl":              { "platform": "Custom / institutional", "note": "USC Digital Library" },
+    "sage.journals":       { "platform": "Custom / institutional", "note": "Sage Journals Data (commercial)" },
+    "undsci.oopmau":       { "platform": "Custom / institutional", "note": "Underline Science Inc. (commercial conference platform)" },
+    "myesr.esr":           { "platform": "Custom / institutional", "note": "European Society of Radiology" },
+    "ieee.rc":             { "platform": "Custom / institutional", "note": "IEEE Resource Centers (commercial)" },
+
+    "inist.garnier":       { "platform": "Custom / institutional", "note": "Classiques Garnier (commercial humanities publisher)" },
+    "jvzn.vcyxuk":         { "platform": "Custom / institutional", "note": "Classiques Garnier" },
+
+    "spbpu.elib":          { "platform": "Custom / institutional", "note": "Peter the Great Polytechnic Electronic Library" },
+    "nrct.db1":            { "platform": "Custom / institutional", "note": "NRCT Data Center (Thailand)" },
+
+    "zbmed.gms":           { "platform": "Custom / institutional", "note": "German Medical Science (ZB MED)" },
+    "tib.aip":             { "platform": "Custom / institutional", "note": "Leibniz Astrophysik Potsdam" },
+    "tib.kmo":             { "platform": "Custom / institutional", "note": "TIB AV Portal" },
+    "tib.tib":             { "platform": "Custom / institutional", "note": "TIB Hannover" },
+    "tib.topoi":           { "platform": "Custom / institutional", "note": "HU Berlin / Topoi Cluster" }
+  },
+
+  "byClientPrefix": {
+    "vvha.":      { "platform": "Custom / institutional", "note": "Geoscience Australia IGSN registry" },
+    "xaqp.":      { "platform": "Custom / institutional", "note": "SESAR (System for Earth Sample Registration)" },
+    "pangaea.":   { "platform": "Custom / institutional", "note": "PANGAEA (AWI/MARUM — Java/PostgreSQL bespoke)" },
+    "cyberl.":    { "platform": "Custom / institutional", "note": "Cyberleninka (Russian open-access aggregator)" },
+    "tind.":      { "platform": "TIND",                    "note": "TIND.io hosted (Invenio-based service)" }
+  },
+
+  "byHostname": {
+    "lpsn.dsmz.de":  { "platform": "Custom / institutional", "note": "LPSN (DSMZ — List of Prokaryotic names)" },
+    "tygs.dsmz.de":  { "platform": "Custom / institutional", "note": "Type-Strain Genome Server (DSMZ)" }
+  },
+
+  "byHostnameSuffix": {
+    ".dsmz.de":          { "platform": "Custom / institutional", "note": "DSMZ family (Leibniz Microorganisms)" },
+    ".researchgate.net": { "platform": "Custom / institutional", "note": "ResearchGate (commercial)" },
+    ".openedition.org":  { "platform": "Lodel",                    "note": "OpenEdition's in-house CMS" }
+  }
+}
